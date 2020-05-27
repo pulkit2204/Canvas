@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learning Canvas</title>
+    </head>
+    <body>
+        <h4> I will teach you how to make a bezier curve using HTML 5.</h4>
+        <canvas id="canvas5" width="500px" height="500px" style=" border: 4px solid black;"></canvas>
+
+        <script>
+
+       //// Creating Bezier Curve
+		  c5controlpoint1x = 150;
+		  c5controlpoint1y = 50;
+		  c5controlpoint2x = 300;
+		  c5controlpoint2y = 50;
+		  c5endingpointx = 400;
+		  c5endingpointy = 350;
+		  c5 = document.getElementById('canvas5');
+		  c5_x = c5.getContext('2d');
+		  c5_x.beginPath();
+		  c5_x.moveTo(50, 350);
+		  c5_x.bezierCurveTo(c5controlpoint1x, c5controlpoint1y, c5controlpoint2x, c5controlpoint2y, c5endingpointx, c5endingpointy);
+		  c5_x.stroke();
+		  
+        </script>
+    </body>
+</html>
